@@ -1,0 +1,13 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="web-prog-3.war">
+    <output-path>$PROJECT_DIR$/out/artifacts/web_prog_3_war</output-path>
+    <root id="archive" name="web-prog-3.jar">
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="web-prog-3" />
+        </element>
+      </element>
+      <element id="dir-copy" path="$PROJECT_DIR$/webapp" />
+    </root>
+  </artifact>
+</component>
