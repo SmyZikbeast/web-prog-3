@@ -28,7 +28,7 @@ public class AreaCheckServlet extends HttpServlet {
         Submission result = Checker.check(point, start);
         results.addFirst(result);
         if (results.size() > 10){
-            results.pop();
+            results.removeLast();
         }
         context.setAttribute("last", result);
 
@@ -42,12 +42,12 @@ public class AreaCheckServlet extends HttpServlet {
         out.println("<table>");
         out.println("<thead>");
         out.println("<tr>");
-        out.println("<th>id</id>");
-        out.println("<th>x</id>");
-        out.println("<th>y</id>");
-        out.println("<th>r</id>");
-        out.println("<th>script time</id>");
-        out.println("<th>result</id>");
+        out.println("<th>id</th>");
+        out.println("<th>x</th>");
+        out.println("<th>y</th>");
+        out.println("<th>r</th>");
+        out.println("<th>script time</th>");
+        out.println("<th>result</th>");
         out.println("</tr>");
         out.println("</thead>");
         out.println("<tbody>");
